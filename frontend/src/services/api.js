@@ -1,4 +1,6 @@
 const API_URL = "https://medicine-supply-chain-optimizer-production.up.railway.app";
+
+export default API_URL;
 function authHeaders() {
   const token = localStorage.getItem("token");
 
