@@ -24,11 +24,16 @@ app = FastAPI(
     version="1.0.0",
 )
 
+# ======================
+# CORS Configuration
+# ======================
+
 app.add_middleware(
     CORSMiddleware,
     allow_origins=[
-        "http://localhost:3000",
         "http://localhost:5173",
+        "http://localhost:5174",
+        "https://medicine-supply-chain-optimizer-production.up.railway.app",
     ],
     allow_credentials=True,
     allow_methods=["*"],
@@ -45,6 +50,7 @@ app.include_router(inventory_routes.router)
 app.include_router(ai.router)
 app.include_router(auth.router)
 app.include_router(transfers.router)
+
 
 # ======================
 # Root Endpoint
