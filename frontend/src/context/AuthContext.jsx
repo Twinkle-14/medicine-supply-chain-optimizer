@@ -2,8 +2,7 @@ import { createContext, useContext, useEffect, useState } from "react";
 
 const AuthContext = createContext();
 
-const API_URL = "http://127.0.0.1:8000";
-
+const API_URL = "https://medicine-supply-chain-optimizer-production.up.railway.app";
 export function AuthProvider({ children }) {
   const [user, setUser] = useState(null);
   const [loading, setLoading] = useState(true);
