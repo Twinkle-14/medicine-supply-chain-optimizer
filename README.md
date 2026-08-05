@@ -76,6 +76,7 @@ The system enables administrators to manage hospitals, medicines, and inventory 
 
 # 📂 Project Structure
 
+```text
 medicine-supply-chain-optimizer/
 │
 ├── backend/
